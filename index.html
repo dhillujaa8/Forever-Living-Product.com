@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forever Living Products International — Network Marketing</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION BAR
+  ══════════════════════════════════════ -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <div class="logo-aloe">🌿</div>
+        <div class="logo-text">
+          FLP Network
+          <span>Forever Living Products</span>
+        </div>
+      </div>
+      <div class="nav-tabs">
+        <button class="nav-tab active" onclick="showPage('page1', this)">
+          Member Registration
+        </button>
+        <button class="nav-tab" onclick="showPage('page2', this)">
+          About Company
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       PAGE 1 — MEMBER REGISTRATION
+  ══════════════════════════════════════ -->
+  <div id="page1" class="page active">
+
+    <!-- Hero Banner -->
+    <div class="hero">
+      <div class="hero-badge">🌿 Join the FLP Family</div>
+      <h1>Start Your <em>Forever</em> Journey with Simran Shekhawat</h1>
+      <p>
+        Register as a network marketing member and unlock a world of wellness,
+        wealth, and freedom with Forever Living Products.
+      </p>
+    </div>
+
+    <!-- Registration Form Card -->
+    <div class="form-section">
+      <div class="form-card">
+
+        <!-- Card Header -->
+        <div class="form-card-header">
+          <div class="icon">📋</div>
+          <div>
+            <h2>Member Registration Form</h2>
+            <p>Fill in your details — we'll send them straight to WhatsApp</p>
+          </div>
+        </div>
+
+        <!-- Form Fields -->
+        <div class="form-grid">
+
+          <!-- Full Name -->
+          <div class="field">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" placeholder="Enter your full name" required />
+          </div>
+
+          <!-- Age -->
+          <div class="field">
+            <label for="age">Age *</label>
+            <input type="number" id="age" placeholder="Your age" min="18" max="80" required />
+          </div>
+
+          <!-- Mobile Number -->
+          <div class="field">
+            <label for="mobile">Mobile Number *</label>
+            <input type="tel" id="mobile" placeholder="+91 00000 00000" required />
+          </div>
+
+          <!-- Email -->
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="yourname@email.com" />
+          </div>
+
+          <!-- Gender -->
+          <div class="field form-full">
+            <label>Gender *</label>
+            <div class="gender-group">
+              <input type="radio" name="gender" id="g-male"   value="Male"   class="gender-option" />
+              <label for="g-male"   class="gender-label"><span class="gender-dot"></span> Male</label>
+
+              <input type="radio" name="gender" id="g-female" value="Female" class="gender-option" />
+              <label for="g-female" class="gender-label"><span class="gender-dot"></span> Female</label>
+
+              <input type="radio" name="gender" id="g-other"  value="Other"  class="gender-option" />
+              <label for="g-other"  class="gender-label"><span class="gender-dot"></span> Other</label>
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="field form-full">
+            <label for="address">Full Address *</label>
+            <textarea
+              id="address"
+              placeholder="House/Flat no., Street, City, State, PIN Code"
+            ></textarea>
+          </div>
+
+          <!-- Occupation -->
+          <div class="field">
+            <label for="occupation">Occupation</label>
+            <select id="occupation">
+              <option value="">— Select —</option>
+              <option>Student</option>
+              <option>Self Employed / Business</option>
+              <option>Salaried / Employee</option>
+              <option>Homemaker</option>
+              <option>Retired</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <!-- Referral / Sponsor -->
+          <div class="field">
+            <label for="referral">Referred By (Sponsor Name)</label>
+            <input type="text" id="referral" placeholder="Sponsor / Upline name" />
+          </div>
+
+          <!-- Interest / Message -->
+          <div class="field form-full">
+            <label for="interest">Interest / Message</label>
+            <textarea
+              id="interest"
+              placeholder="Tell us why you want to join FLP or any message..."
+              style="min-height: 70px;"
+            ></textarea>
+          </div>
+
+        </div><!-- /form-grid -->
+
+        <!-- WhatsApp Submit Button -->
+        <button class="wa-btn" onclick="sendToWhatsApp()">
+          <span class="wa-icon">📲</span>
+          <a href="https://wa.me/917977480020">Chat on 
+          Save &amp; Send to WhatsApp
+        </button>
+<!-- Basic link -->
+ <button class="insta" onclick="sendToInstagram()">
+  <span class="wa-icon">📲</span>
+<a href="https://ig.me/m/miss_simmu2005" target="_blank">Chat with me on Instagram</a>
+</button>
+
+<!-- Button style -->
+<button onclick="
+        <p class="form-note"><br>🔒 Your information is sent securely via WhatsApp </p>
+
+      </div><!-- /form-card -->
+    </div><!-- /form-section -->
+
+  </div><!-- /page1 -->
+
+
+  <!-- ══════════════════════════════════════
+       PAGE 2 — ABOUT COMPANY (FLP)
+  ══════════════════════════════════════ -->
+  <div id="page2" class="page">
+
+    <!-- Company Hero -->
+    <div class="company-hero">
+      <div class="flp-emblem">FLP</div>
+      <h1>Forever Living Products International</h1>
+      <p class="subtitle">Pure &bull; Natural &bull; Beneficial</p>
+    </div>
+
+    <!-- Company Body -->
+    <div class="company-body">
+
+      <!-- Key Stats -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">🌍</div>
+          <div class="stat-value">160+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">👥</div>
+          <div class="stat-value">9.3M+</div>
+          <div class="stat-label">Distributors</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📅</div>
+          <div class="stat-value">1978</div>
+          <div class="stat-label">Founded</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">💰</div>
+          <div class="stat-value">$4B+</div>
+          <div class="stat-label">Annual Revenue</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌿</div>
+          <div class="stat-value">150+</div>
+          <div class="stat-label">Products</div>
+        </div>
+      </div><!-- /stats-grid -->
+
+      <!-- About FLP -->
+      <div style="margin-bottom: 48px;">
+        <div class="section-title">About FLP</div>
+        <div class="section-divider"></div>
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>🏢 Company Overview</h3>
+            <p>
+              Forever Living Products International (FLP) was founded in
+              <strong>1978</strong> by <strong>Rex Maughan</strong> in Scottsdale,
+              Arizona, USA. It is one of the world's largest growers, manufacturers,
+              and distributors of aloe vera-based health, beauty, and wellness products.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>🌿 Our Mission</h3>
+            <p>
+              To improve the quality of life for people around the world through
+              pure, natural aloe vera products and a proven business opportunity.
+              FLP is committed to sustainability, quality, and the wellbeing of
+              every distributor and customer.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>📍 Headquarters</h3>
+            <p>
+              <strong>Scottsdale, Arizona, USA</strong><br />
+              Regional offices across all major continents. Operations in 160+
+              countries with a growing presence in India, Asia, Africa, and
+              the Middle East.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>🏆 Awards &amp; Recognition</h3>
+            <ul>
+              <li>Member of the DSA (Direct Selling Association)</li>
+              <li>Ranked among top MLM companies globally</li>
+              <li>ISO certified manufacturing facilities</li>
+              <li>GMP (Good Manufacturing Practice) certified</li>
+              <li>IASC certified aloe products</li>
+            </ul>
+          </div>
+        </div><!-- /info-grid -->
+      </div>
+
+      <!-- Product Range -->
+      <div class="products-section">
+        <div class="section-title">Our Product Range</div>
+        <div class="section-divider"></div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-emoji">🥤</div>
+            <div class="product-name">Aloe Vera Drinks</div>
+            <div class="product-desc">Pure aloe vera gel drinks for digestion &amp; immunity</div>
+          </div>
+          <div class="product-card">
+            <div class="product-emoji">💊</div>
+            <div class="product-name">Nutritional Supplements</div>
+            <div class="product-desc">Vitamins, minerals &amp; superfoods for daily wellness</div>
+          </div>
+          <div class="product-card">
+            <div class="product-emoji">✨</div>
+            <div class="product-name">Skincare &amp; Beauty</div>
+            <div class="product-desc">Natural skincare with aloe vera base formulas</div>
+          </div>
+          <div class="product-card">
+            <div class="product-emoji">🐝</div>
+            <div class="product-name">Bee Products</div>
+            <div class="product-desc">Royal jelly, bee pollen &amp; propolis supplements</div>
+          </div>
+          <div class="product-card">
+            <div class="product-emoji">⚖️</div>
+            <div class="product-name">Weight Management</div>
+            <div class="product-desc">Clean9 &amp; F15 programs for a healthy weight</div>
+          </div>
+          <div class="product-card">
+            <div class="product-emoji">🐾</div>
+            <div class="product-name">Animal Care</div>
+            <div class="product-desc">Aloe vera products for your beloved pets</div>
+          </div>
+        </div><!-- /products-grid -->
+      </div><!-- /products-section -->
+
+      <!-- Marketing Plan -->
+      <div style="margin-bottom: 48px;">
+        <div class="section-title">Marketing Plan &amp; Earnings</div>
+        <div class="section-divider"></div>
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>📈 Business Model</h3>
+            <p>
+              FLP operates on a <strong>multi-level marketing (MLM)</strong> /
+              direct selling model. Distributors earn through personal retail sales
+              and by building a team of active distributors beneath them (downline).
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>💵 Income Streams</h3>
+            <ul>
+              <li>Retail profit on product sales</li>
+              <li>Personal bonus (up to 18%)</li>
+              <li>Group volume bonus (up to 13%)</li>
+              <li>Leadership bonus &amp; Profit sharing</li>
+              <li>Car plan &amp; Travel awards</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3>🎖️ Ranks / Levels</h3>
+            <ul>
+              <li>Distributor (New Joiner)</li>
+              <li>Assistant Supervisor</li>
+              <li>Supervisor</li>
+              <li>Assistant Manager</li>
+              <li>Manager → Senior Manager</li>
+              <li>Soaring Manager &amp; Above</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3>🌟 Why Join FLP?</h3>
+            <ul>
+              <li>Zero risk — no inventory required</li>
+              <li>Work from home / part-time</li>
+              <li>International travel rewards</li>
+              <li>World-class training &amp; support</li>
+              <li>Proven 45+ year-old brand</li>
+            </ul>
+          </div>
+        </div><!-- /info-grid -->
+      </div>
+
+      <!-- Call To Action -->
+      <div class="opportunity-section">
+        <h2>Ready to Change Your Life?</h2>
+        <p>
+          Join millions of FLP distributors worldwide and build your own wellness
+          business with the most trusted name in aloe vera products.
+        </p>
+        <button class="join-btn">
+          🌿 Register as Member
+        </button>
+        <div class="contact-strip">
+          <div class="contact-chip">🌐 foreverliving.com</div>
+          <div class="contact-chip">📧 <a href="mailto:shekhawatsimran321@gmail.com">shekhawatsimran321@gmail.com</a></div>
+          <div class="contact-chip">📞 <a href="tel:+917977480020">+91 7977480020</a></div>
+          <!-- <div class="contact-chip">📍 Scottsdale, AZ, USA</div> -->
+        </div>
+      </div>
+
+    </div><!-- /company-body -->
+  </div><!-- /page2 -->
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+    <p>
+      &copy; 2025
+      <strong>Forever Living Products International (FLP)</strong>
+      &mdash; Network Marketing Division. All Rights Reserved.
+    </p>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast">✅ Redirecting to WhatsApp&hellip;</div>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
