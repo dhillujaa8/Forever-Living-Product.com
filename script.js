@@ -99,7 +99,8 @@ function sendToWhatsApp() {
 
   /* ── Build URL and open WhatsApp ── */
   var encoded = encodeURIComponent(msg);
-  var waURL   = 'https://wa.me/?text=' + encoded;
+     var phoneNumber = "917977480020";
+    var waURL   = 'https://wa.me/' + phoneNumber + '?text=' + encoded;
 
   showToast('✅ Opening WhatsApp…');
   setTimeout(function () {
