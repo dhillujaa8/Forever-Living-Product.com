@@ -106,6 +106,14 @@ function sendToWhatsApp() {
   setTimeout(function () {
     window.open(waURL, '_blank');
   }, 600);
+ /* ── Build URL and open Instagram ── */
+    var encoded = encodeURIComponent(msg);
+    var igUsername = "miss_simmu2005";
+    var igUrl = "https://ig.me/m/miss_simmu2005" + igUsername + "?text=" + encodeURIComponent(infoToShare);
+    showToast('✅ Opening Instagram…');
+    setTimeout(function () {
+      window.open(igUrl, '_blank');
+    }, 600);
 }
 
 /**
