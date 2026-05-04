@@ -109,7 +109,7 @@ function sendToWhatsApp() {
  /* ── Build URL and open Instagram ── */
     var encoded = encodeURIComponent(msg);
     var igUsername = "miss_simmu2005";
-    var igUrl = "https://ig.me/m/miss_simmu2005" + igUsername + "?text=" + encodeURIComponent(infoToShare);
+    var igUrl = "https://ig.me/m/miss_simmu2005" + igUsername + "?text=" + encoded;
     showToast('✅ Opening Instagram…');
     setTimeout(function () {
       window.open(igUrl, '_blank');
